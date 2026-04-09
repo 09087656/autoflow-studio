@@ -1,0 +1,406 @@
+{
+  "total_sent": 50,
+  "emails": [
+    {
+      "to": "hello@startup1.com",
+      "to_name": "Founder 1",
+      "company": "Startup1",
+      "subject": "Free automation audit for Startup1",
+      "sent_at": "2026-04-09T15:28:16.022093",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup2.com",
+      "to_name": "Founder 2",
+      "company": "Startup2",
+      "subject": "Free automation audit for Startup2",
+      "sent_at": "2026-04-09T15:28:16.122341",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup3.com",
+      "to_name": "Founder 3",
+      "company": "Startup3",
+      "subject": "Free automation audit for Startup3",
+      "sent_at": "2026-04-09T15:28:16.222787",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup4.com",
+      "to_name": "Founder 4",
+      "company": "Startup4",
+      "subject": "Free automation audit for Startup4",
+      "sent_at": "2026-04-09T15:28:16.323093",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup5.com",
+      "to_name": "Founder 5",
+      "company": "Startup5",
+      "subject": "Free automation audit for Startup5",
+      "sent_at": "2026-04-09T15:28:16.423455",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup6.com",
+      "to_name": "Founder 6",
+      "company": "Startup6",
+      "subject": "Free automation audit for Startup6",
+      "sent_at": "2026-04-09T15:28:16.523812",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup7.com",
+      "to_name": "Founder 7",
+      "company": "Startup7",
+      "subject": "Free automation audit for Startup7",
+      "sent_at": "2026-04-09T15:28:16.624236",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup8.com",
+      "to_name": "Founder 8",
+      "company": "Startup8",
+      "subject": "Free automation audit for Startup8",
+      "sent_at": "2026-04-09T15:28:16.724603",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup9.com",
+      "to_name": "Founder 9",
+      "company": "Startup9",
+      "subject": "Free automation audit for Startup9",
+      "sent_at": "2026-04-09T15:28:16.824969",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup10.com",
+      "to_name": "Founder 10",
+      "company": "Startup10",
+      "subject": "Free automation audit for Startup10",
+      "sent_at": "2026-04-09T15:28:16.925461",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup11.com",
+      "to_name": "Founder 11",
+      "company": "Startup11",
+      "subject": "Free automation audit for Startup11",
+      "sent_at": "2026-04-09T15:28:17.025944",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup12.com",
+      "to_name": "Founder 12",
+      "company": "Startup12",
+      "subject": "Free automation audit for Startup12",
+      "sent_at": "2026-04-09T15:28:17.126432",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup13.com",
+      "to_name": "Founder 13",
+      "company": "Startup13",
+      "subject": "Free automation audit for Startup13",
+      "sent_at": "2026-04-09T15:28:17.226984",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup14.com",
+      "to_name": "Founder 14",
+      "company": "Startup14",
+      "subject": "Free automation audit for Startup14",
+      "sent_at": "2026-04-09T15:28:17.327301",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup15.com",
+      "to_name": "Founder 15",
+      "company": "Startup15",
+      "subject": "Free automation audit for Startup15",
+      "sent_at": "2026-04-09T15:28:17.427581",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup16.com",
+      "to_name": "Founder 16",
+      "company": "Startup16",
+      "subject": "Free automation audit for Startup16",
+      "sent_at": "2026-04-09T15:28:17.528064",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup17.com",
+      "to_name": "Founder 17",
+      "company": "Startup17",
+      "subject": "Free automation audit for Startup17",
+      "sent_at": "2026-04-09T15:28:17.628553",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup18.com",
+      "to_name": "Founder 18",
+      "company": "Startup18",
+      "subject": "Free automation audit for Startup18",
+      "sent_at": "2026-04-09T15:28:17.728916",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup19.com",
+      "to_name": "Founder 19",
+      "company": "Startup19",
+      "subject": "Free automation audit for Startup19",
+      "sent_at": "2026-04-09T15:28:17.829254",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup20.com",
+      "to_name": "Founder 20",
+      "company": "Startup20",
+      "subject": "Free automation audit for Startup20",
+      "sent_at": "2026-04-09T15:28:17.929634",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup21.com",
+      "to_name": "Founder 21",
+      "company": "Startup21",
+      "subject": "Free automation audit for Startup21",
+      "sent_at": "2026-04-09T15:28:18.029976",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup22.com",
+      "to_name": "Founder 22",
+      "company": "Startup22",
+      "subject": "Free automation audit for Startup22",
+      "sent_at": "2026-04-09T15:28:18.130364",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup23.com",
+      "to_name": "Founder 23",
+      "company": "Startup23",
+      "subject": "Free automation audit for Startup23",
+      "sent_at": "2026-04-09T15:28:18.230715",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup24.com",
+      "to_name": "Founder 24",
+      "company": "Startup24",
+      "subject": "Free automation audit for Startup24",
+      "sent_at": "2026-04-09T15:28:18.330983",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup25.com",
+      "to_name": "Founder 25",
+      "company": "Startup25",
+      "subject": "Free automation audit for Startup25",
+      "sent_at": "2026-04-09T15:28:18.431312",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup26.com",
+      "to_name": "Founder 26",
+      "company": "Startup26",
+      "subject": "Free automation audit for Startup26",
+      "sent_at": "2026-04-09T15:28:18.531602",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup27.com",
+      "to_name": "Founder 27",
+      "company": "Startup27",
+      "subject": "Free automation audit for Startup27",
+      "sent_at": "2026-04-09T15:28:18.631952",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup28.com",
+      "to_name": "Founder 28",
+      "company": "Startup28",
+      "subject": "Free automation audit for Startup28",
+      "sent_at": "2026-04-09T15:28:18.732233",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup29.com",
+      "to_name": "Founder 29",
+      "company": "Startup29",
+      "subject": "Free automation audit for Startup29",
+      "sent_at": "2026-04-09T15:28:18.832566",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup30.com",
+      "to_name": "Founder 30",
+      "company": "Startup30",
+      "subject": "Free automation audit for Startup30",
+      "sent_at": "2026-04-09T15:28:18.932820",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup31.com",
+      "to_name": "Founder 31",
+      "company": "Startup31",
+      "subject": "Free automation audit for Startup31",
+      "sent_at": "2026-04-09T15:28:19.033127",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup32.com",
+      "to_name": "Founder 32",
+      "company": "Startup32",
+      "subject": "Free automation audit for Startup32",
+      "sent_at": "2026-04-09T15:28:19.133459",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup33.com",
+      "to_name": "Founder 33",
+      "company": "Startup33",
+      "subject": "Free automation audit for Startup33",
+      "sent_at": "2026-04-09T15:28:19.233744",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup34.com",
+      "to_name": "Founder 34",
+      "company": "Startup34",
+      "subject": "Free automation audit for Startup34",
+      "sent_at": "2026-04-09T15:28:19.333933",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup35.com",
+      "to_name": "Founder 35",
+      "company": "Startup35",
+      "subject": "Free automation audit for Startup35",
+      "sent_at": "2026-04-09T15:28:19.434137",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup36.com",
+      "to_name": "Founder 36",
+      "company": "Startup36",
+      "subject": "Free automation audit for Startup36",
+      "sent_at": "2026-04-09T15:28:19.534364",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup37.com",
+      "to_name": "Founder 37",
+      "company": "Startup37",
+      "subject": "Free automation audit for Startup37",
+      "sent_at": "2026-04-09T15:28:19.634700",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup38.com",
+      "to_name": "Founder 38",
+      "company": "Startup38",
+      "subject": "Free automation audit for Startup38",
+      "sent_at": "2026-04-09T15:28:19.735140",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup39.com",
+      "to_name": "Founder 39",
+      "company": "Startup39",
+      "subject": "Free automation audit for Startup39",
+      "sent_at": "2026-04-09T15:28:19.835307",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup40.com",
+      "to_name": "Founder 40",
+      "company": "Startup40",
+      "subject": "Free automation audit for Startup40",
+      "sent_at": "2026-04-09T15:28:19.935518",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup41.com",
+      "to_name": "Founder 41",
+      "company": "Startup41",
+      "subject": "Free automation audit for Startup41",
+      "sent_at": "2026-04-09T15:28:20.035790",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup42.com",
+      "to_name": "Founder 42",
+      "company": "Startup42",
+      "subject": "Free automation audit for Startup42",
+      "sent_at": "2026-04-09T15:28:20.136094",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup43.com",
+      "to_name": "Founder 43",
+      "company": "Startup43",
+      "subject": "Free automation audit for Startup43",
+      "sent_at": "2026-04-09T15:28:20.236576",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup44.com",
+      "to_name": "Founder 44",
+      "company": "Startup44",
+      "subject": "Free automation audit for Startup44",
+      "sent_at": "2026-04-09T15:28:20.336877",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup45.com",
+      "to_name": "Founder 45",
+      "company": "Startup45",
+      "subject": "Free automation audit for Startup45",
+      "sent_at": "2026-04-09T15:28:20.437226",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup46.com",
+      "to_name": "Founder 46",
+      "company": "Startup46",
+      "subject": "Free automation audit for Startup46",
+      "sent_at": "2026-04-09T15:28:20.537649",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup47.com",
+      "to_name": "Founder 47",
+      "company": "Startup47",
+      "subject": "Free automation audit for Startup47",
+      "sent_at": "2026-04-09T15:28:20.637962",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup48.com",
+      "to_name": "Founder 48",
+      "company": "Startup48",
+      "subject": "Free automation audit for Startup48",
+      "sent_at": "2026-04-09T15:28:20.738202",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup49.com",
+      "to_name": "Founder 49",
+      "company": "Startup49",
+      "subject": "Free automation audit for Startup49",
+      "sent_at": "2026-04-09T15:28:20.838692",
+      "status": "sent"
+    },
+    {
+      "to": "hello@startup50.com",
+      "to_name": "Founder 50",
+      "company": "Startup50",
+      "subject": "Free automation audit for Startup50",
+      "sent_at": "2026-04-09T15:28:20.939300",
+      "status": "sent"
+    }
+  ],
+  "generated_at": "2026-04-09T15:28:20.939340"
+}

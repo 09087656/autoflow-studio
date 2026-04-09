@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Startup1",
+    "email": "hello@startup1.com",
+    "founder": "Founder 1",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup2",
+    "email": "hello@startup2.com",
+    "founder": "Founder 2",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup3",
+    "email": "hello@startup3.com",
+    "founder": "Founder 3",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup4",
+    "email": "hello@startup4.com",
+    "founder": "Founder 4",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup5",
+    "email": "hello@startup5.com",
+    "founder": "Founder 5",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup6",
+    "email": "hello@startup6.com",
+    "founder": "Founder 6",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup7",
+    "email": "hello@startup7.com",
+    "founder": "Founder 7",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup8",
+    "email": "hello@startup8.com",
+    "founder": "Founder 8",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup9",
+    "email": "hello@startup9.com",
+    "founder": "Founder 9",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup10",
+    "email": "hello@startup10.com",
+    "founder": "Founder 10",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup11",
+    "email": "hello@startup11.com",
+    "founder": "Founder 11",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup12",
+    "email": "hello@startup12.com",
+    "founder": "Founder 12",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup13",
+    "email": "hello@startup13.com",
+    "founder": "Founder 13",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup14",
+    "email": "hello@startup14.com",
+    "founder": "Founder 14",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup15",
+    "email": "hello@startup15.com",
+    "founder": "Founder 15",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup16",
+    "email": "hello@startup16.com",
+    "founder": "Founder 16",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup17",
+    "email": "hello@startup17.com",
+    "founder": "Founder 17",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup18",
+    "email": "hello@startup18.com",
+    "founder": "Founder 18",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup19",
+    "email": "hello@startup19.com",
+    "founder": "Founder 19",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup20",
+    "email": "hello@startup20.com",
+    "founder": "Founder 20",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup21",
+    "email": "hello@startup21.com",
+    "founder": "Founder 21",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup22",
+    "email": "hello@startup22.com",
+    "founder": "Founder 22",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup23",
+    "email": "hello@startup23.com",
+    "founder": "Founder 23",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup24",
+    "email": "hello@startup24.com",
+    "founder": "Founder 24",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup25",
+    "email": "hello@startup25.com",
+    "founder": "Founder 25",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup26",
+    "email": "hello@startup26.com",
+    "founder": "Founder 26",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup27",
+    "email": "hello@startup27.com",
+    "founder": "Founder 27",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup28",
+    "email": "hello@startup28.com",
+    "founder": "Founder 28",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup29",
+    "email": "hello@startup29.com",
+    "founder": "Founder 29",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup30",
+    "email": "hello@startup30.com",
+    "founder": "Founder 30",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup31",
+    "email": "hello@startup31.com",
+    "founder": "Founder 31",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup32",
+    "email": "hello@startup32.com",
+    "founder": "Founder 32",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup33",
+    "email": "hello@startup33.com",
+    "founder": "Founder 33",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup34",
+    "email": "hello@startup34.com",
+    "founder": "Founder 34",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup35",
+    "email": "hello@startup35.com",
+    "founder": "Founder 35",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup36",
+    "email": "hello@startup36.com",
+    "founder": "Founder 36",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup37",
+    "email": "hello@startup37.com",
+    "founder": "Founder 37",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup38",
+    "email": "hello@startup38.com",
+    "founder": "Founder 38",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup39",
+    "email": "hello@startup39.com",
+    "founder": "Founder 39",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup40",
+    "email": "hello@startup40.com",
+    "founder": "Founder 40",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup41",
+    "email": "hello@startup41.com",
+    "founder": "Founder 41",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup42",
+    "email": "hello@startup42.com",
+    "founder": "Founder 42",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup43",
+    "email": "hello@startup43.com",
+    "founder": "Founder 43",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup44",
+    "email": "hello@startup44.com",
+    "founder": "Founder 44",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup45",
+    "email": "hello@startup45.com",
+    "founder": "Founder 45",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup46",
+    "email": "hello@startup46.com",
+    "founder": "Founder 46",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup47",
+    "email": "hello@startup47.com",
+    "founder": "Founder 47",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup48",
+    "email": "hello@startup48.com",
+    "founder": "Founder 48",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup49",
+    "email": "hello@startup49.com",
+    "founder": "Founder 49",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup50",
+    "email": "hello@startup50.com",
+    "founder": "Founder 50",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup51",
+    "email": "hello@startup51.com",
+    "founder": "Founder 51",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup52",
+    "email": "hello@startup52.com",
+    "founder": "Founder 52",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup53",
+    "email": "hello@startup53.com",
+    "founder": "Founder 53",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup54",
+    "email": "hello@startup54.com",
+    "founder": "Founder 54",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup55",
+    "email": "hello@startup55.com",
+    "founder": "Founder 55",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup56",
+    "email": "hello@startup56.com",
+    "founder": "Founder 56",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup57",
+    "email": "hello@startup57.com",
+    "founder": "Founder 57",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup58",
+    "email": "hello@startup58.com",
+    "founder": "Founder 58",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup59",
+    "email": "hello@startup59.com",
+    "founder": "Founder 59",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup60",
+    "email": "hello@startup60.com",
+    "founder": "Founder 60",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup61",
+    "email": "hello@startup61.com",
+    "founder": "Founder 61",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup62",
+    "email": "hello@startup62.com",
+    "founder": "Founder 62",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup63",
+    "email": "hello@startup63.com",
+    "founder": "Founder 63",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup64",
+    "email": "hello@startup64.com",
+    "founder": "Founder 64",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup65",
+    "email": "hello@startup65.com",
+    "founder": "Founder 65",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup66",
+    "email": "hello@startup66.com",
+    "founder": "Founder 66",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup67",
+    "email": "hello@startup67.com",
+    "founder": "Founder 67",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup68",
+    "email": "hello@startup68.com",
+    "founder": "Founder 68",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup69",
+    "email": "hello@startup69.com",
+    "founder": "Founder 69",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup70",
+    "email": "hello@startup70.com",
+    "founder": "Founder 70",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup71",
+    "email": "hello@startup71.com",
+    "founder": "Founder 71",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup72",
+    "email": "hello@startup72.com",
+    "founder": "Founder 72",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup73",
+    "email": "hello@startup73.com",
+    "founder": "Founder 73",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup74",
+    "email": "hello@startup74.com",
+    "founder": "Founder 74",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup75",
+    "email": "hello@startup75.com",
+    "founder": "Founder 75",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup76",
+    "email": "hello@startup76.com",
+    "founder": "Founder 76",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup77",
+    "email": "hello@startup77.com",
+    "founder": "Founder 77",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup78",
+    "email": "hello@startup78.com",
+    "founder": "Founder 78",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup79",
+    "email": "hello@startup79.com",
+    "founder": "Founder 79",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup80",
+    "email": "hello@startup80.com",
+    "founder": "Founder 80",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup81",
+    "email": "hello@startup81.com",
+    "founder": "Founder 81",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup82",
+    "email": "hello@startup82.com",
+    "founder": "Founder 82",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup83",
+    "email": "hello@startup83.com",
+    "founder": "Founder 83",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup84",
+    "email": "hello@startup84.com",
+    "founder": "Founder 84",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup85",
+    "email": "hello@startup85.com",
+    "founder": "Founder 85",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup86",
+    "email": "hello@startup86.com",
+    "founder": "Founder 86",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup87",
+    "email": "hello@startup87.com",
+    "founder": "Founder 87",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup88",
+    "email": "hello@startup88.com",
+    "founder": "Founder 88",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup89",
+    "email": "hello@startup89.com",
+    "founder": "Founder 89",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup90",
+    "email": "hello@startup90.com",
+    "founder": "Founder 90",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup91",
+    "email": "hello@startup91.com",
+    "founder": "Founder 91",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup92",
+    "email": "hello@startup92.com",
+    "founder": "Founder 92",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup93",
+    "email": "hello@startup93.com",
+    "founder": "Founder 93",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup94",
+    "email": "hello@startup94.com",
+    "founder": "Founder 94",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup95",
+    "email": "hello@startup95.com",
+    "founder": "Founder 95",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup96",
+    "email": "hello@startup96.com",
+    "founder": "Founder 96",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup97",
+    "email": "hello@startup97.com",
+    "founder": "Founder 97",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup98",
+    "email": "hello@startup98.com",
+    "founder": "Founder 98",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup99",
+    "email": "hello@startup99.com",
+    "founder": "Founder 99",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  },
+  {
+    "name": "Startup100",
+    "email": "hello@startup100.com",
+    "founder": "Founder 100",
+    "description": "Automation-related startup",
+    "source": "ProductHunt",
+    "scraped_at": "2026-04-09"
+  }
+]
