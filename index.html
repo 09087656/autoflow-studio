@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High Tech Clinic Auxerre — Réparation smartphone, tablette, PC et console</title>
+<meta name="description" content="Réparation écran, batterie, désoxydation et micro-soudure à Auxerre. Toutes marques, en 1h à 48h, garantie 3 mois. Prenez rendez-vous en ligne.">
+<meta name="theme-color" content="#07090C">
+<link rel="icon" href="logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:#07090C}
+a{color:#E8ECF1}a:hover{color:#FFFFFF}
+.disp{font-family:'Chakra Petch',sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:14px;background:var(--a);color:#05101F;font:inherit;font-weight:800;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px var(--a);color:#05101F}
+.btn:disabled{opacity:.35;cursor:not-allowed;transform:none;box-shadow:none}
+.ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:14px;background:transparent;color:#FFFFFF;border:1px solid #343D48;font:inherit;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer}
+.ghost:hover{border-color:#5A6573;color:#FFFFFF}
+.opt{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:20px;border-radius:18px;border:1px solid #262E38;background:#11161C;color:#E8ECF1;font:inherit;font-weight:700;font-size:17px;cursor:pointer;text-align:left;transition:transform .25s,border-color .25s,background .25s}
+.opt:hover{transform:translateY(-4px);border-color:var(--a)}
+.opt.on{border-color:var(--a);background:#10203A;box-shadow:inset 0 0 0 1px var(--a)}
+.opt small{font-weight:500;font-size:14px;color:#9AA4B1}
+.chip{min-height:48px;padding:0 16px;border-radius:12px;border:1px solid #262E38;background:#11161C;color:#E8ECF1;font:inherit;font-weight:700;font-size:15px;cursor:pointer;transition:border-color .2s,background .2s}
+.chip:hover{border-color:var(--a)}
+.chip.on{border-color:var(--a);background:#10203A;box-shadow:inset 0 0 0 1px var(--a)}
+.bar{height:5px;border-radius:5px;background:#222A33;flex:1}
+.bar.on{background:var(--a)}
+.field{display:flex;flex-direction:column;gap:8px;font-weight:700;font-size:14px;color:#B9C2CD}
+.field input{min-height:52px;padding:0 16px;border-radius:12px;border:1px solid #2A323C;background:#0B0F13;color:#FFFFFF;font:inherit;font-size:16px;font-weight:500}
+.field input:focus{outline:none;border-color:var(--a);box-shadow:0 0 0 3px rgba(79,140,255,.25)}
+.tilt{transition:transform .35s,border-color .35s}
+.tilt:hover{transform:perspective(900px) rotateX(6deg) rotateY(-6deg) translateY(-6px);border-color:var(--a)}
+.stage{}
+.phone{transform:perspective(1400px) rotateY(-24deg) rotateX(10deg) rotateZ(3deg);animation:float 6s ease-in-out infinite}
+.f1{animation:bob 5s ease-in-out infinite}
+.f2{animation:bob 6s ease-in-out -2s infinite}
+.f3{animation:bob 7s ease-in-out -4s infinite}
+.ecg{stroke-dasharray:420;stroke-dashoffset:420;animation:dash 2.6s linear infinite}
+.floor{transform:perspective(900px) rotateX(74deg);background-image:linear-gradient(rgba(79,140,255,.22) 1px,transparent 1px),linear-gradient(90deg,rgba(79,140,255,.22) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at center,#000 20%,transparent 70%);mask-image:radial-gradient(ellipse at center,#000 20%,transparent 70%)}
+@keyframes float{0%,100%{transform:perspective(1400px) rotateY(-24deg) rotateX(10deg) rotateZ(3deg) translateY(0)}50%{transform:perspective(1400px) rotateY(-18deg) rotateX(8deg) rotateZ(2deg) translateY(-16px)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes dash{to{stroke-dashoffset:0}}
+@media (max-width: 720px){.navlink{display:none}}
+@media (prefers-reduced-motion: reduce){.phone,.f1,.f2,.f3,.ecg{animation:none}.ecg{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<div style="--a: #4F8CFF; background: #07090C; color: #E8ECF1; font-family: 'Manrope', system-ui, sans-serif; font-size: 16px; line-height: 1.55; overflow-x: hidden">
+<header style="border-bottom: 1px solid #161B22">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#accueil" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+<img src="logo-icon.png" alt="" style="height: 38px; width: auto">
+<span class="disp" style="font-weight: 700; font-size: 19px; letter-spacing: 0.06em">HIGH TECH CLINIC</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px; font-size: 15px; font-weight: 700">
+<a href="#reparations" class="navlink" style="text-decoration: none; color: #B9C2CD">Réparations</a>
+<a href="#boutique" class="navlink" style="text-decoration: none; color: #B9C2CD">Boutique</a>
+<a href="#services" class="navlink" style="text-decoration: none; color: #B9C2CD">Services</a>
+<a href="#contact" class="navlink" style="text-decoration: none; color: #B9C2CD">Contact</a>
+<a href="#rdv" class="btn" style="min-height: 44px; padding: 0 18px; font-size: 15px">Prendre rendez-vous</a>
+</nav>
+</div>
+</header>
+<section id="accueil" style="position: relative">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div style="flex: 1 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 26px; position: relative; z-index: 2">
+<div style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; border: 1px solid #2A323C; border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 700; color: #B9C2CD">
+<span style="width: 8px; height: 8px; border-radius: 50%; background: var(--a); box-shadow: 0 0 12px var(--a)"></span>
+Atelier de réparation · Auxerre
+</div>
+<h1 class="disp" style="margin: 0; font-weight: 700; font-size: clamp(52px, 8vw, 96px); line-height: 0.95; letter-spacing: -0.02em; color: #FFFFFF">Cassé ?<br><span style="color: var(--a)">Réparé.</span></h1>
+<p style="margin: 0; font-size: 20px; color: #A7B0BC; max-width: 520px">En 1h à 48h, garanti 3 mois. Smartphones, tablettes, ordinateurs et consoles, toutes marques.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#rdv" class="btn">Prendre rendez-vous</a>
+<a href="tel:0954867029" class="ghost">09 54 86 70 29</a>
+</div>
+</div>
+<div class="stage" style="flex: 1 1 420px; min-width: 0; height: 600px; position: relative; display: flex; align-items: center; justify-content: center">
+<div class="floor" aria-hidden="true" style="position: absolute; left: -20%; right: -20%; bottom: -120px; height: 520px"></div>
+<div aria-hidden="true" style="position: absolute; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, var(--a) 0%, transparent 62%); opacity: 0.28"></div>
+<div class="phone" style="position: relative; width: 260px; height: 530px; border-radius: 46px; background: #0C0F14; border: 2px solid #3A434E; box-shadow: 1px 1px 0 #2E3640, 2px 2px 0 #2B323B, 3px 3px 0 #282F37, 4px 4px 0 #252B33, 5px 5px 0 #22282F, 6px 6px 0 #1F242B, 7px 7px 0 #1C2127, 8px 8px 0 #191D23, 9px 9px 0 #161A1F, 10px 10px 0 #13161B, 40px 50px 70px rgba(0,0,0,0.65); padding: 12px; box-sizing: border-box">
+<div style="width: 100%; height: 100%; border-radius: 36px; background: #050608; overflow: hidden; display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 22px 18px; box-sizing: border-box; position: relative">
+<div style="width: 86px; height: 22px; border-radius: 12px; background: #000000; border: 1px solid #1A1E24"></div>
+<img src="logo-icon.png" alt="" style="height: 92px; width: auto; margin-top: 6px">
+<svg viewBox="0 0 220 70" aria-hidden="true" style="width: 100%; height: 60px; display: block"><path class="ecg" d="M0 38 H70 L82 38 L92 12 L104 62 L118 4 L132 66 L144 26 L154 38 H220" fill="none" style="stroke: var(--a)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="width: 100%; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: center; background: #0F1318; border: 1px solid #1C222A; border-radius: 12px; padding: 10px 12px; font-size: 13px; font-weight: 700"><span>Écran</span><span style="color: var(--a)">Remplacé</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; background: #0F1318; border: 1px solid #1C222A; border-radius: 12px; padding: 10px 12px; font-size: 13px; font-weight: 700"><span>Batterie</span><span style="color: var(--a)">100 %</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; background: #0F1318; border: 1px solid #1C222A; border-radius: 12px; padding: 10px 12px; font-size: 13px; font-weight: 700"><span>Carte mère</span><span style="color: var(--a)">OK</span></div>
+</div>
+<div class="disp" style="margin-top: auto; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: #8C96A3">DIAGNOSTIC TERMINÉ</div>
+</div>
+</div>
+<div class="f1" style="position: absolute; top: 70px; left: 4%; background: rgba(17,22,28,0.92); border: 1px solid #2A323C; border-radius: 16px; padding: 14px 18px; display: flex; flex-direction: column; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6)"><span class="disp" style="font-size: 26px; font-weight: 700; color: #FFFFFF; line-height: 1.1">3 mois</span><span style="font-size: 13px; color: #9AA4B1; font-weight: 600">de garantie</span></div>
+<div class="f2" style="position: absolute; top: 250px; right: 0; background: rgba(17,22,28,0.92); border: 1px solid #2A323C; border-radius: 16px; padding: 14px 18px; display: flex; flex-direction: column; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6)"><span class="disp" style="font-size: 26px; font-weight: 700; color: #FFFFFF; line-height: 1.1">1h – 48h</span><span style="font-size: 13px; color: #9AA4B1; font-weight: 600">de délai</span></div>
+<div class="f3" style="position: absolute; bottom: 70px; left: 8%; background: rgba(17,22,28,0.92); border: 1px solid #2A323C; border-radius: 16px; padding: 14px 18px; display: flex; flex-direction: column; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6)"><span class="disp" style="font-size: 26px; font-weight: 700; color: #FFFFFF; line-height: 1.1">Toutes</span><span style="font-size: 13px; color: #9AA4B1; font-weight: 600">marques</span></div>
+</div>
+</div>
+</section>
+<section style="border-top: 1px solid #161B22; background: #0A0D11">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px">
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span class="disp" style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 14px; border: 1px solid var(--a); color: var(--a); display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700">1</span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 class="disp" style="margin: 0; font-size: 21px; color: #FFFFFF">Réservez en 30 secondes</h3><p style="margin: 0; color: #9AA4B1; font-size: 15px">Choisissez l'appareil, la panne et votre créneau.</p></div>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span class="disp" style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 14px; border: 1px solid var(--a); color: var(--a); display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700">2</span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 class="disp" style="margin: 0; font-size: 21px; color: #FFFFFF">Déposez votre appareil</h3><p style="margin: 0; color: #9AA4B1; font-size: 15px">Diagnostic en boutique, sans attente.</p></div>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span class="disp" style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 14px; border: 1px solid var(--a); color: var(--a); display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700">3</span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 class="disp" style="margin: 0; font-size: 21px; color: #FFFFFF">Récupérez-le réparé</h3><p style="margin: 0; color: #9AA4B1; font-size: 15px">En 1h à 48h, avec 3 mois de garantie.</p></div>
+</div>
+</div>
+</section>
+<section id="rdv" style="border-top: 1px solid #161B22">
+<div style="max-width: 980px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
+<span class="disp" style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; color: var(--a)">PRISE DE RENDEZ-VOUS</span>
+<h2 class="disp" style="margin: 0; font-size: clamp(34px, 4.6vw, 52px); line-height: 1.05; color: #FFFFFF">Votre réparation, réservée en 4 clics.</h2>
+</div>
+<div style="background: #0E1217; border: 1px solid #222932; border-radius: 28px; padding: clamp(20px, 4vw, 40px); display: flex; flex-direction: column; gap: 28px; box-shadow: 0 40px 80px -30px rgba(0,0,0,0.7)">
+<div id="rdv-head" style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
+<span style="font-weight: 800; font-size: 15px; color: #FFFFFF">Étape <span id="rdv-step">1</span> sur 4 · <span id="rdv-title">Votre appareil</span></span>
+<span id="rdv-recap" style="font-size: 14px; color: #9AA4B1; font-weight: 600"></span>
+</div>
+<div style="display: flex; gap: 8px"><div class="bar on"></div><div class="bar" data-bar="2"></div><div class="bar" data-bar="3"></div><div class="bar" data-bar="4"></div></div>
+</div>
+<div data-step="1" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px">
+<button type="button" class="opt" data-device="Smartphone"><svg viewBox="0 0 24 24" aria-hidden="true" style="width: 34px; height: 34px; stroke: var(--a)" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg>Smartphone<small>iPhone, Samsung, Xiaomi…</small></button>
+<button type="button" class="opt" data-device="Tablette"><svg viewBox="0 0 24 24" aria-hidden="true" style="width: 34px; height: 34px; stroke: var(--a)" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg>Tablette<small>iPad, Galaxy Tab…</small></button>
+<button type="button" class="opt" data-device="Ordinateur"><svg viewBox="0 0 24 24" aria-hidden="true" style="width: 34px; height: 34px; stroke: var(--a)" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="11" rx="1.5"></rect><path d="M2 19h20"></path></svg>Ordinateur<small>Portable ou fixe</small></button>
+<button type="button" class="opt" data-device="Console"><svg viewBox="0 0 24 24" aria-hidden="true" style="width: 34px; height: 34px; stroke: var(--a)" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12a4 4 0 0 1 3.9 4.9l-.8 3.5a2.5 2.5 0 0 1-4.3 1.1L15 15.5H9l-1.8 2a2.5 2.5 0 0 1-4.3-1.1l-.8-3.5A4 4 0 0 1 6 8z"></path><path d="M7 11v3M5.5 12.5h3"></path><circle cx="16" cy="12" r="0.8"></circle><circle cx="18" cy="13.5" r="0.8"></circle></svg>Console<small>PlayStation, Switch, Xbox</small></button>
+</div>
+<div data-step="2" hidden style="flex-direction: column; gap: 22px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px">
+<button type="button" class="opt" data-issue="Écran cassé">Écran cassé<small>Vitre fissurée, tactile HS, écran noir</small></button>
+<button type="button" class="opt" data-issue="Batterie">Batterie<small>Autonomie faible, s'éteint seul</small></button>
+<button type="button" class="opt" data-issue="Désoxydation">Tombé dans l'eau<small>Désoxydation de la carte mère</small></button>
+<button type="button" class="opt" data-issue="Micro-soudure">Ne charge plus / ne s'allume plus<small>Micro-soudure, connecteur</small></button>
+<button type="button" class="opt" data-issue="Autre panne">Autre panne<small>On fait le diagnostic</small></button>
+</div>
+<div><button type="button" class="ghost" data-back>Retour</button></div>
+</div>
+<div data-step="3" hidden style="flex-direction: column; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-weight: 800; color: #FFFFFF">Jour</span>
+<div id="rdv-days" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-weight: 800; color: #FFFFFF">Heure</span>
+<div id="rdv-slots" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px"></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
+<button type="button" class="ghost" data-back>Retour</button>
+<button type="button" class="btn" id="rdv-next" disabled>Continuer</button>
+</div>
+</div>
+<form data-step="4" hidden id="rdv-form" style="flex-direction: column; gap: 22px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+<label class="field">Prénom et nom<input type="text" id="rdv-name" autocomplete="name" placeholder="Ex. Sarah Martin" required></label>
+<label class="field">Téléphone<input type="tel" id="rdv-phone" autocomplete="tel" placeholder="06 12 34 56 78" required></label>
+</div>
+<div style="background: #0A0D11; border: 1px solid #222932; border-radius: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 700; color: #9AA4B1; letter-spacing: 0.08em">RÉCAPITULATIF</span>
+<span id="rdv-full" style="font-weight: 800; color: #FFFFFF; font-size: 17px"></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
+<button type="button" class="ghost" data-back>Retour</button>
+<button type="submit" class="btn" id="rdv-submit" disabled>Confirmer le rendez-vous</button>
+</div>
+</form>
+<div data-step="5" hidden style="flex-direction: column; align-items: center; text-align: center; gap: 16px; padding: 24px 0">
+<div style="width: 72px; height: 72px; border-radius: 50%; border: 2px solid var(--a); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 30px -6px var(--a)"><svg viewBox="0 0 24 24" aria-hidden="true" style="width: 34px; height: 34px; stroke: var(--a)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
+<h3 class="disp" style="margin: 0; font-size: 30px; color: #FFFFFF">C'est réservé, <span id="rdv-first"></span> !</h3>
+<p id="rdv-done" style="margin: 0; color: #A7B0BC; font-size: 17px; max-width: 520px"></p>
+<button type="button" class="ghost" id="rdv-reset">Nouveau rendez-vous</button>
+</div>
+</div>
+<p style="margin: 0; text-align: center; color: #8C96A3; font-size: 15px">Pressé ? Passez directement en boutique ou appelez le <a href="tel:0954867029" style="font-weight: 700">09 54 86 70 29</a>.</p>
+</div>
+</section>
+<section id="reparations" style="border-top: 1px solid #161B22; background: #0A0D11">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span class="disp" style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; color: var(--a)">RÉPARATIONS</span>
+<h2 class="disp" style="margin: 0; font-size: clamp(32px, 4.4vw, 50px); line-height: 1.05; color: #FFFFFF">De l'écran cassé à la carte mère noyée.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px">
+<div class="tilt" style="background: #11161C; border: 1px solid #222932; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span class="disp" style="font-size: 14px; color: #8C96A3; font-weight: 600">01</span>
+<h3 class="disp" style="margin: 0; font-size: 24px; color: #FFFFFF">Écran</h3>
+<p style="margin: 0; color: #A7B0BC; font-size: 15px">Vitre fissurée, tactile qui ne répond plus, lignes ou écran noir.</p>
+<span style="margin-top: auto; font-weight: 800; color: var(--a)">dès [PRIX] €</span>
+</div>
+<div class="tilt" style="background: #11161C; border: 1px solid #222932; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span class="disp" style="font-size: 14px; color: #8C96A3; font-weight: 600">02</span>
+<h3 class="disp" style="margin: 0; font-size: 24px; color: #FFFFFF">Batterie</h3>
+<p style="margin: 0; color: #A7B0BC; font-size: 15px">Autonomie en chute, extinctions, batterie gonflée.</p>
+<span style="margin-top: auto; font-weight: 800; color: var(--a)">dès [PRIX] €</span>
+</div>
+<div class="tilt" style="background: #11161C; border: 1px solid #222932; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span class="disp" style="font-size: 14px; color: #8C96A3; font-weight: 600">03</span>
+<h3 class="disp" style="margin: 0; font-size: 24px; color: #FFFFFF">Désoxydation</h3>
+<p style="margin: 0; color: #A7B0BC; font-size: 15px">Chute dans l'eau, liquide renversé : on sauve l'appareil et vos données.</p>
+<span style="margin-top: auto; font-weight: 800; color: var(--a)">sur devis</span>
+</div>
+<div class="tilt" style="background: #11161C; border: 1px solid #222932; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+<span class="disp" style="font-size: 14px; color: #8C96A3; font-weight: 600">04</span>
+<h3 class="disp" style="margin: 0; font-size: 24px; color: #FFFFFF">Micro-soudure</h3>
+<p style="margin: 0; color: #A7B0BC; font-size: 15px">Connecteur de charge, puce, composant : les pannes que d'autres refusent.</p>
+<span style="margin-top: auto; font-weight: 800; color: var(--a)">sur devis</span>
+</div>
+</div>
+</div>
+</section>
+<section id="boutique" style="border-top: 1px solid #161B22">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 620px">
+<span class="disp" style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; color: var(--a)">BOUTIQUE</span>
+<h2 class="disp" style="margin: 0; font-size: clamp(32px, 4.4vw, 50px); line-height: 1.05; color: #FFFFFF">Équipez-vous sur place.</h2>
+</div>
+<a href="#contact" class="ghost">Voir l'adresse</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
+<div class="tilt" style="border: 1px solid #222932; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; background: #11161C">
+<div style="aspect-ratio: 4 / 3; background: #161C23; display: flex; align-items: center; justify-content: center; color: #8C96A3; font-size: 14px; font-weight: 700">[PHOTO]</div>
+<div style="padding: 20px 22px; display: flex; flex-direction: column; gap: 4px"><h3 class="disp" style="margin: 0; font-size: 20px; color: #FFFFFF">Téléphones</h3><p style="margin: 0; color: #A7B0BC; font-size: 15px">Neufs et reconditionnés</p></div>
+</div>
+<div class="tilt" style="border: 1px solid #222932; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; background: #11161C">
+<div style="aspect-ratio: 4 / 3; background: #161C23; display: flex; align-items: center; justify-content: center; color: #8C96A3; font-size: 14px; font-weight: 700">[PHOTO]</div>
+<div style="padding: 20px 22px; display: flex; flex-direction: column; gap: 4px"><h3 class="disp" style="margin: 0; font-size: 20px; color: #FFFFFF">Protection hydrogel</h3><p style="margin: 0; color: #A7B0BC; font-size: 15px">Découpée et posée sur place</p></div>
+</div>
+<div class="tilt" style="border: 1px solid #222932; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; background: #11161C">
+<div style="aspect-ratio: 4 / 3; background: #161C23; display: flex; align-items: center; justify-content: center; color: #8C96A3; font-size: 14px; font-weight: 700">[PHOTO]</div>
+<div style="padding: 20px 22px; display: flex; flex-direction: column; gap: 4px"><h3 class="disp" style="margin: 0; font-size: 20px; color: #FFFFFF">Accessoires et high-tech</h3><p style="margin: 0; color: #A7B0BC; font-size: 15px">Coques, chargeurs, audio, gaming</p></div>
+</div>
+<div class="tilt" style="border: 1px solid #222932; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; background: #11161C">
+<div style="aspect-ratio: 4 / 3; background: #161C23; display: flex; align-items: center; justify-content: center; color: #8C96A3; font-size: 14px; font-weight: 700">[PHOTO]</div>
+<div style="padding: 20px 22px; display: flex; flex-direction: column; gap: 4px"><h3 class="disp" style="margin: 0; font-size: 20px; color: #FFFFFF">PC sur mesure</h3><p style="margin: 0; color: #A7B0BC; font-size: 15px">Gaming ou pro, monté et testé ici</p></div>
+</div>
+</div>
+</div>
+</section>
+<section id="services" style="border-top: 1px solid #161B22; background: #0A0D11">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 380px">
+<span class="disp" style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; color: var(--a)">AUSSI EN BOUTIQUE</span>
+<h2 class="disp" style="margin: 0; font-size: 30px; line-height: 1.1; color: #FFFFFF">Vos services du quotidien.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; flex: 1 1 520px; justify-content: flex-end">
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Forfaits FREE</span>
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Lycamobile</span>
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Recharges</span>
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Western Union</span>
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Mondial Relay</span>
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Colis Privé</span>
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">GLS</span>
+<span style="border: 1px solid #2A323C; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px">Amazon</span>
+</div>
+</div>
+</section>
+<section id="contact" style="border-top: 1px solid #161B22">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="disp" style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; color: var(--a)">NOUS TROUVER</span>
+<h2 class="disp" style="margin: 0; font-size: clamp(32px, 4.4vw, 50px); line-height: 1.05; color: #FFFFFF">On vous attend à Auxerre.</h2>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Adresse</span><span>[ADRESSE], 89000 Auxerre</span></div>
+<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Horaires</span><span>[JOURS ET HORAIRES]</span></div>
+<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Téléphone</span><a href="tel:0954867029" style="text-decoration: none; font-weight: 800">09 54 86 70 29</a></div>
+<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932; border-bottom: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Réseaux</span><span>[INSTAGRAM] · [WHATSAPP]</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#rdv" class="btn">Prendre rendez-vous</a>
+<a href="https://maps.google.com/?q=High+Tech+Clinic+Auxerre" class="ghost">Itinéraire</a>
+</div>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; min-height: 380px; border: 1px dashed #343D48; border-radius: 24px; display: flex; align-items: center; justify-content: center; color: #8C96A3; font-weight: 700; text-align: center; padding: 24px; box-sizing: border-box">[CARTE GOOGLE MAPS]</div>
+</div>
+</section>
+<footer style="border-top: 1px solid #161B22">
+<div style="max-width: 1200px; margin: 0 auto; padding: 44px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<img src="logo.png" alt="High Tech Clinic" style="height: 90px; width: auto">
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #8C96A3">
+<span>High Tech Clinic · Réparation et boutique high-tech à Auxerre</span>
+<span>[RAISON SOCIALE] · SIRET [NUMÉRO]</span>
+<a href="#mentions" style="color: #B9C2CD">Mentions légales</a>
+</div>
+</div>
+</footer>
+</div>
+<script>(function () {
+var s = { step: 1, device: '', issue: '', day: null, slot: '' };
+var $ = function (q, r) { return (r || document).querySelector(q); };
+var $$ = function (q, r) { return Array.prototype.slice.call((r || document).querySelectorAll(q)); };
+var titles = ['', 'Votre appareil', 'La panne', 'Votre créneau', 'Vos coordonnées'];
+function when() { return s.day && s.slot ? s.day.long + ' à ' + s.slot.replace(':', 'h') : ''; }
+function recap() { return [s.device, s.issue].filter(Boolean).join(' · '); }
+function full() { var w = when(); return recap() + (w ? ' · ' + w : ''); }
+function render() {
+$$('[data-step]').forEach(function (el) {
+var on = Number(el.getAttribute('data-step')) === s.step;
+el.hidden = !on;
+el.style.display = on ? (el.getAttribute('data-step') === '1' ? 'grid' : 'flex') : 'none';
+});
+$('#rdv-head').style.display = s.step === 5 ? 'none' : 'flex';
+if (s.step <= 4) {
+$('#rdv-step').textContent = s.step;
+$('#rdv-title').textContent = titles[s.step];
+}
+$('#rdv-recap').textContent = recap();
+$$('[data-bar]').forEach(function (b) { b.classList.toggle('on', Number(b.getAttribute('data-bar')) <= s.step); });
+$$('[data-device]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-device') === s.device); });
+$$('[data-issue]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-issue') === s.issue); });
+$$('#rdv-days .chip').forEach(function (b) { b.classList.toggle('on', !!s.day && b.getAttribute('data-key') === s.day.key); });
+$$('#rdv-slots .chip').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-slot') === s.slot); });
+$('#rdv-next').disabled = !(s.day && s.slot);
+$('#rdv-full').textContent = full();
+checkForm();
+}
+function checkForm() {
+var ok = $('#rdv-name').value.trim() && $('#rdv-phone').value.replace(/\D/g, '').length >= 10;
+$('#rdv-submit').disabled = !ok;
+}
+var daysBox = $('#rdv-days');
+var d = new Date();
+var n = 0;
+while (n < 6) {
+d.setDate(d.getDate() + 1);
+if (d.getDay() === 0) continue;
+var key = d.toISOString().slice(0, 10);
+var b = document.createElement('button');
+b.type = 'button';
+b.className = 'chip';
+b.setAttribute('data-key', key);
+b.setAttribute('data-long', d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }));
+b.style.cssText = 'min-height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.2';
+var wd = document.createElement('span');
+wd.style.cssText = 'font-size:13px;color:#9AA4B1;font-weight:600';
+wd.textContent = d.toLocaleDateString('fr-FR', { weekday: 'short' }).replace('.', '');
+var dm = document.createElement('span');
+dm.textContent = d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' }).replace('.', '');
+b.appendChild(wd); b.appendChild(dm);
+daysBox.appendChild(b);
+n++;
+}
+var slotsBox = $('#rdv-slots');
+['10:00', '11:00', '12:00', '14:00', '15:00', '16:00', '17:00', '18:00'].forEach(function (t) {
+var b = document.createElement('button');
+b.type = 'button'; b.className = 'chip'; b.setAttribute('data-slot', t); b.textContent = t.replace(':', 'h');
+slotsBox.appendChild(b);
+});
+document.addEventListener('click', function (e) {
+var t = e.target.closest('button');
+if (!t || !t.closest('#rdv')) return;
+if (t.hasAttribute('data-device')) { s.device = t.getAttribute('data-device'); s.step = 2; }
+else if (t.hasAttribute('data-issue')) { s.issue = t.getAttribute('data-issue'); s.step = 3; }
+else if (t.hasAttribute('data-key')) { s.day = { key: t.getAttribute('data-key'), long: t.getAttribute('data-long') }; }
+else if (t.hasAttribute('data-slot')) { s.slot = t.getAttribute('data-slot'); }
+else if (t.id === 'rdv-next') { s.step = 4; }
+else if (t.hasAttribute('data-back')) { s.step = Math.max(1, s.step - 1); }
+else if (t.id === 'rdv-reset') { s = { step: 1, device: '', issue: '', day: null, slot: '' }; $('#rdv-form').reset(); }
+else return;
+render();
+});
+$('#rdv-name').addEventListener('input', checkForm);
+$('#rdv-phone').addEventListener('input', checkForm);
+$('#rdv-form').addEventListener('submit', function (e) {
+e.preventDefault();
+var name = $('#rdv-name').value.trim();
+var phone = $('#rdv-phone').value.trim();
+$('#rdv-first').textContent = name.split(' ')[0];
+$('#rdv-done').textContent = full() + '. La boutique vous recontacte au ' + phone + ' pour confirmer.';
+s.step = 5;
+render();
+});
+render();
+})();
+</script>
+</body>
+</html>
