@@ -126,7 +126,7 @@ Atelier de réparation · Auxerre
 <div style="background: #0E1217; border: 1px solid #222932; border-radius: 28px; padding: clamp(20px, 4vw, 40px); display: flex; flex-direction: column; gap: 28px; box-shadow: 0 40px 80px -30px rgba(0,0,0,0.7)">
 <div id="rdv-head" style="display: flex; flex-direction: column; gap: 12px">
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-<span style="font-weight: 800; font-size: 15px; color: #FFFFFF">Étape <span id="rdv-step">1</span> sur 4 · <span id="rdv-title">Votre appareil</span></span>
+<span style="font-weight: 800; font-size: 15px; color: #FFFFFF">Étape <span id="rdv-step">1</span> sur <span id="rdv-total">4</span> · <span id="rdv-title">Votre appareil</span></span>
 <span id="rdv-recap" style="font-size: 14px; color: #9AA4B1; font-weight: 600"></span>
 </div>
 <div style="display: flex; gap: 8px"><div class="bar on"></div><div class="bar" data-bar="2"></div><div class="bar" data-bar="3"></div><div class="bar" data-bar="4"></div></div>
@@ -148,6 +148,11 @@ Atelier de réparation · Auxerre
 <div><button type="button" class="ghost" data-back>Retour</button></div>
 </div>
 <div data-step="3" hidden style="flex-direction: column; gap: 22px">
+<div id="rdv-cal" hidden style="flex-direction: column; gap: 18px">
+<div id="rdv-cal-box" style="min-width: 320px; height: 700px; border-radius: 18px; overflow: hidden; background: #FFFFFF"></div>
+<div><button type="button" class="ghost" data-back>Retour</button></div>
+</div>
+<div id="rdv-native" style="display: flex; flex-direction: column; gap: 22px">
 <div style="display: flex; flex-direction: column; gap: 12px">
 <span style="font-weight: 800; color: #FFFFFF">Jour</span>
 <div id="rdv-days" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px"></div>
@@ -159,6 +164,7 @@ Atelier de réparation · Auxerre
 <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
 <button type="button" class="ghost" data-back>Retour</button>
 <button type="button" class="btn" id="rdv-next" disabled>Continuer</button>
+</div>
 </div>
 </div>
 <form data-step="4" hidden id="rdv-form" style="flex-direction: column; gap: 22px">
@@ -177,7 +183,7 @@ Atelier de réparation · Auxerre
 </form>
 <div data-step="5" hidden style="flex-direction: column; align-items: center; text-align: center; gap: 16px; padding: 24px 0">
 <div style="width: 72px; height: 72px; border-radius: 50%; border: 2px solid var(--a); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 30px -6px var(--a)"><svg viewBox="0 0 24 24" aria-hidden="true" style="width: 34px; height: 34px; stroke: var(--a)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
-<h3 class="disp" style="margin: 0; font-size: 30px; color: #FFFFFF">C'est réservé, <span id="rdv-first"></span> !</h3>
+<h3 class="disp" id="rdv-done-title" style="margin: 0; font-size: 30px; color: #FFFFFF">C'est réservé, <span id="rdv-first"></span> !</h3>
 <p id="rdv-done" style="margin: 0; color: #A7B0BC; font-size: 17px; max-width: 520px"></p>
 <button type="button" class="ghost" id="rdv-reset">Nouveau rendez-vous</button>
 </div>
@@ -270,17 +276,17 @@ Atelier de réparation · Auxerre
 <h2 class="disp" style="margin: 0; font-size: clamp(32px, 4.4vw, 50px); line-height: 1.05; color: #FFFFFF">On vous attend à Auxerre.</h2>
 </div>
 <div style="display: flex; flex-direction: column">
-<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Adresse</span><span>[ADRESSE], 89000 Auxerre</span></div>
-<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Horaires</span><span>[JOURS ET HORAIRES]</span></div>
+<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Adresse</span><span id="htc-adresse">[ADRESSE], 89000 Auxerre</span></div>
+<div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Horaires</span><span id="htc-horaires" style="white-space: pre-line">[JOURS ET HORAIRES]</span></div>
 <div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Téléphone</span><a href="tel:0954867029" style="text-decoration: none; font-weight: 800">09 54 86 70 29</a></div>
 <div style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #222932; border-bottom: 1px solid #222932"><span style="width: 110px; flex-shrink: 0; color: #8C96A3; font-weight: 700">Réseaux</span><span>[INSTAGRAM] · [WHATSAPP]</span></div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 14px">
 <a href="#rdv" class="btn">Prendre rendez-vous</a>
-<a href="https://maps.google.com/?q=High+Tech+Clinic+Auxerre" class="ghost">Itinéraire</a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=High+Tech+Clinic+Auxerre" id="htc-itin" class="ghost" target="_blank" rel="noopener">Itinéraire</a>
 </div>
 </div>
-<div style="flex: 1 1 400px; min-width: 0; min-height: 380px; border: 1px dashed #343D48; border-radius: 24px; display: flex; align-items: center; justify-content: center; color: #8C96A3; font-weight: 700; text-align: center; padding: 24px; box-sizing: border-box">[CARTE GOOGLE MAPS]</div>
+<div style="flex: 1 1 400px; min-width: 0; min-height: 380px; border: 1px dashed #343D48; border-radius: 24px; display: flex; align-items: center; justify-content: center; color: #8C96A3; font-weight: 700; text-align: center; padding: 24px; box-sizing: border-box; overflow: hidden; position: relative" id="htc-map">[CARTE GOOGLE MAPS]</div>
 </div>
 </section>
 <footer style="border-top: 1px solid #161B22">
@@ -294,11 +300,55 @@ Atelier de réparation · Auxerre
 </div>
 </footer>
 </div>
+<script>
+/* ============ RÉGLAGES DE LA BOUTIQUE (à remplir) ============ */
+window.HTC_CONFIG = {
+  // Lien Calendly de la boutique, ex. "https://calendly.com/hightechclinic/reparation"
+  // Vide = prise de RDV de démonstration (aucune réservation réelle).
+  calendlyUrl: "",
+  // Adresse complète, ex. "12 rue du Temple, 89000 Auxerre"
+  adresse: "",
+  // Horaires, une ligne par plage, ex. "Lun – Sam : 10h – 19h\nDimanche : fermé"
+  horaires: ""
+};
+/* ============================================================= */
+</script>
 <script>(function () {
 var s = { step: 1, device: '', issue: '', day: null, slot: '' };
 var $ = function (q, r) { return (r || document).querySelector(q); };
 var $$ = function (q, r) { return Array.prototype.slice.call((r || document).querySelectorAll(q)); };
 var titles = ['', 'Votre appareil', 'La panne', 'Votre créneau', 'Vos coordonnées'];
+
+var CFG = window.HTC_CONFIG || {};
+var CAL = (CFG.calendlyUrl || '').trim();
+var calLoaded = false, calShownFor = '';
+if (CAL) { titles[3] = 'Votre créneau et vos coordonnées'; $('#rdv-total').textContent = '3'; }
+function loadCalendly(cb) {
+  if (window.Calendly) return cb();
+  if (!calLoaded) {
+    calLoaded = true;
+    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://assets.calendly.com/assets/external/widget.css'; document.head.appendChild(l);
+    var sc = document.createElement('script'); sc.src = 'https://assets.calendly.com/assets/external/widget.js'; sc.async = true; document.head.appendChild(sc);
+  }
+  var tries = 0, iv = setInterval(function () { if (window.Calendly || ++tries > 100) { clearInterval(iv); if (window.Calendly) cb(); } }, 100);
+}
+function showCalendly() {
+  var key = s.device + '|' + s.issue;
+  if (calShownFor === key) return;
+  calShownFor = key;
+  var box = $('#rdv-cal-box'); box.textContent = '';
+  var sep = CAL.indexOf('?') === -1 ? '?' : '&';
+  var url = CAL + sep + 'hide_gdpr_banner=1&primary_color=4f8cff';
+  loadCalendly(function () {
+    window.Calendly.initInlineWidget({ url: url, parentElement: box, prefill: { customAnswers: { a1: s.device + ' · ' + s.issue } } });
+  });
+}
+window.addEventListener('message', function (e) {
+  if (!e.origin || e.origin.indexOf('calendly.com') === -1 || !e.data || e.data.event !== 'calendly.event_scheduled') return;
+  $('#rdv-done-title').textContent = 'C’est réservé !';
+  $('#rdv-done').textContent = recap() + '. Votre rendez-vous est confirmé : vous allez recevoir un e-mail de confirmation.';
+  s.step = 5; render();
+});
 function when() { return s.day && s.slot ? s.day.long + ' à ' + s.slot.replace(':', 'h') : ''; }
 function recap() { return [s.device, s.issue].filter(Boolean).join(' · '); }
 function full() { var w = when(); return recap() + (w ? ' · ' + w : ''); }
@@ -313,6 +363,9 @@ if (s.step <= 4) {
 $('#rdv-step').textContent = s.step;
 $('#rdv-title').textContent = titles[s.step];
 }
+$('#rdv-cal').hidden = !CAL; $('#rdv-cal').style.display = CAL ? 'flex' : 'none';
+$('#rdv-native').style.display = CAL ? 'none' : 'flex';
+if (CAL && s.step === 3) showCalendly();
 $('#rdv-recap').textContent = recap();
 $$('[data-bar]').forEach(function (b) { b.classList.toggle('on', Number(b.getAttribute('data-bar')) <= s.step); });
 $$('[data-device]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-device') === s.device); });
@@ -364,7 +417,7 @@ else if (t.hasAttribute('data-key')) { s.day = { key: t.getAttribute('data-key')
 else if (t.hasAttribute('data-slot')) { s.slot = t.getAttribute('data-slot'); }
 else if (t.id === 'rdv-next') { s.step = 4; }
 else if (t.hasAttribute('data-back')) { s.step = Math.max(1, s.step - 1); }
-else if (t.id === 'rdv-reset') { s = { step: 1, device: '', issue: '', day: null, slot: '' }; $('#rdv-form').reset(); }
+else if (t.id === 'rdv-reset') { s = { step: 1, device: '', issue: '', day: null, slot: '' }; $('#rdv-form').reset(); calShownFor = ''; }
 else return;
 render();
 });
@@ -379,6 +432,22 @@ $('#rdv-done').textContent = full() + '. La boutique vous recontacte au ' + phon
 s.step = 5;
 render();
 });
+
+(function () {
+  var a = (CFG.adresse || '').trim();
+  if (CFG.horaires) $('#htc-horaires').textContent = CFG.horaires;
+  if (!a) return;
+  $('#htc-adresse').textContent = a;
+  var q = encodeURIComponent('High Tech Clinic, ' + a);
+  $('#htc-itin').href = 'https://www.google.com/maps/dir/?api=1&destination=' + q;
+  var box = $('#htc-map'); box.textContent = ''; box.style.border = '1px solid #222932'; box.style.padding = '0';
+  var f = document.createElement('iframe');
+  f.title = 'Carte : High Tech Clinic Auxerre';
+  f.src = 'https://www.google.com/maps?q=' + q + '&output=embed';
+  f.loading = 'lazy'; f.referrerPolicy = 'no-referrer-when-downgrade';
+  f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.6)';
+  box.appendChild(f);
+})();
 render();
 })();
 </script>
