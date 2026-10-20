@@ -324,7 +324,7 @@ var titles = ['', 'Votre appareil', 'La panne', 'Votre créneau', 'Vos coordonn�
 var CFG = window.HTC_CONFIG || {};
 var CAL = (CFG.calendlyUrl || '').trim();
 var calLoaded = false, calShownFor = '';
-if (CAL) { titles[3] = 'Votre créneau et vos coordonnées'; $('#rdv-total').textContent = '3'; }
+if (CAL) { titles[3] = 'Votre créneau et vos coordonnées'; $('#rdv-total').textContent = '3'; var b4 = document.querySelector('[data-bar="4"]'); if (b4) b4.style.display = 'none'; }
 function loadCalendly(cb) {
   if (window.Calendly) return cb();
   if (!calLoaded) {
@@ -350,6 +350,7 @@ window.addEventListener('message', function (e) {
   $('#rdv-done-title').textContent = 'C’est réservé !';
   $('#rdv-done').textContent = recap() + '. Votre rendez-vous est confirmé : vous allez recevoir un e-mail de confirmation.';
   s.step = 5; render();
+document.getElementById('rdv').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 function when() { return s.day && s.slot ? s.day.long + ' à ' + s.slot.replace(':', 'h') : ''; }
 function recap() { return [s.device, s.issue].filter(Boolean).join(' · '); }
